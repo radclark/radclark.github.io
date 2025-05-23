@@ -1,1 +1,159 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clark | GitHub</title>
+    <style>
+        :root {
+            --primary-color: #e1e1e1;
+            --black: #0e0e0e;
+            --bg-color: #2f2f2f;
+            --text-color: #f2f2f2;
+            --card-bg: #424242;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+        }
+        
+        .avatar {
+            width: 175px;
+            height: 175px;
+            border-radius: 25%;
+            object-fit: cover;
+            border: 4px solid var(--black);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 0px;
+        }
+        
+        .bio {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 6px 19px rgba(22,22,22,.5);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 2px solid var(--black);
+            border-radius: 6px;
+            padding: 15px;
+        }
+        
+        .project-card h3 {
+            margin-top: 1px;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #586069;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0d1117;
+                --text-color: #c9d1d9;
+                --card-bg: #161b22;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/213122786?v=4" alt="avatar" class="avatar">
+        <h1>Clark</h1>
+        <p class="bio">hi i like cat</p>
+        <div class="social-links">
+            <a href="https://github.com/radclark" target="_blank">GitHub</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Hello, My name is Clark, I am an 8th grader who recently discovered the world of HTML and CSS, I always wanted to create a website and I got the perfect opportunity to do that when my ELA class had me present a NFP (not-for-profit) organization. We had to make a video about it, and we could optionally make a website for it, so I chose to make a website for it, You can find it below under 'My Projects'</p>
+        </section>
+        
+        <section class="card">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1: ELA Project</h3>
+                    <p>Short description of your project. What it does, technologies used, etc.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Short description of your project. What it does, technologies used, etc.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Short description of your project. What it does, technologies used, etc.</p>
+                    <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Skills</h2>
+            <p>List your technical skills here. You can organize them by category:</p>
+            <ul>
+                <li><strong>Languages:</strong> JavaScript, Python, Java, etc.</li>
+                <li><strong>Frameworks:</strong> React, Node.js, Django, etc.</li>
+                <li><strong>Tools:</strong> Git, Docker, VS Code, etc.</li>
+                <li><strong>Other:</strong> UI/UX Design, Technical Writing, etc.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Clark (@radclark). All rights reserved.</p>
+        <p>Powered by GitHub Pages</p>
+    </footer>
+</body>
+</html>
